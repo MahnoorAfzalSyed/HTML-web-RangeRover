@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range Rovers World</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+
+</head>
+<meta name="author" content="Mahnoor Afzal Syed">
+
+<body>
+  <header id="Logo">
+    <img class="img-logo" src="capture.png" alt="Range Rover Logo">
+   
+  </header>
+</div>
+  <section>
+<!--navigation bar linked to other pages -->
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="Models.html">Models</a>
+      <a href="Contact.html">Contact</a>
+      <a href="AboutMe.html">About Me</a>
+    </div>
+ <!--text to welcome users -->
+     <h2 class="slide">Welcome to the Range Rover Heaven!</h2>
+    <p class="slide">Dive right into the world of luxurious cars and embark on an adventurous journey. </p>
+    <p class="slide"> Whether you are willing to buy your first car or upgrade it to the next level, our website is your ultimate destination </p>
+    <p class="slide"> Your exploration today by searching for your ideal model.</p>
+<!-- slideshow images -->
+<div>
+  <img class="mySlides" src="img1.jpg" style="width:100%">
+  <img class="mySlides" src="img2.webp" style="width:100%">
+  <img class="mySlides" src="img3.jpg" style="width:100%">
+</div>
+
+  </section> 
+
+  <!--cards that are link to the pages -->
+
+  <div class="AllLinkscards">
+    <div class="linkscards">
+      <div class="linksText">
+        <h4 class="linksTitle">Models</h4>
+        <p class="linksDescr">
+          <a href="Models.html">Click to find out all models.</a>
+        </p>
+      </div>
+      <img src="carpic.webp" alt="Products Image">
+    </div>
+
+    <div class="linkscards">
+      <div class="linksText">
+        <h4 class="linksTitle">Gallery</h4>
+        <p class="linksDescr">
+          <a href="Gallery.html">Click to look at the photographs.</a>
+        </p>
+      </div>
+      <img src="cam1.png" alt="Products Image">
+    </div>
+
+    <div class="linkscards">
+      <div class="linksText">
+        <h4 class="linksTitle">Contract</h4>
+        <p class="linksDescr">
+          <a href="Contact.html">Click to contact us!.</a>
+        </p>
+      </div>
+      <img src="phone.jpg" alt="Products Image">
+    </div>
+
+ 
+</div>
+</div>
+<!--function for the slideshow -->
+  <script>
+     
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+           
+
+  </script> 
+  <!--Footer-->
+  <footer class="mainFooter">
+  
+    <p>© Mahnoor Afzal Syed- Department of Software Engineering, De Montfort University</p>
+
+
+<!--link to socials-->
+    <a href="https://www.facebook.com/landrover/" class="social-link" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/LandRover/" class="social-link" target="_blank">instagram</a> 
+    <a href="https://twitter.com/LandRover/" class="social-link" target="_blank">Twitter</a>
+  </footer>
+</body>
+<html>
